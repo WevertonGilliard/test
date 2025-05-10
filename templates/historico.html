@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Histórico</title>
+</head>
+<body>
+    <h1>Histórico Financeiro</h1>
+    <table border="1">
+        {% for linha in dados %}
+            <tr>
+                {% for item in linha %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Voltar</a>
+</body>
+</html>
